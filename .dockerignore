@@ -1,0 +1,27 @@
+# 构建产物与环境文件
+node_modules
+.next
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+
+# 数据：绝不进镜像（必须用持久卷挂载）
+data
+*.db
+*.db-wal
+*.db-shm
+
+# 日志与临时文件
+*.log
+notes/evidence
+
+# 开发期验收工具
+scripts/lead-verify.mjs
+scripts/lead-verify-all.mjs
+scripts/verify-e2e.mjs
+scripts/acceptance.mjs
+scripts/check-production.mjs
+tests/_api-host.mjs
+tests/_probe-schemas.mjs

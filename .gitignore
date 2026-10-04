@@ -1,0 +1,30 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# 运行时数据与密钥：绝不入库
+data/
+*.db
+*.db-wal
+*.db-shm
+.env
+.env.local
+.env.production
+
+# 日志与临时文件
+*.log
+.tools/
+tsconfig.tsbuildinfo
+next-env.d.ts
+
+# 开发期验收工具（含测试凭据，不进交付仓库）
+scripts/lead-verify.mjs
+scripts/lead-verify-all.mjs
+scripts/verify-e2e.mjs
+scripts/check-production.mjs
+scripts/acceptance.mjs
+tests/_api-host.mjs
+tests/_probe-schemas.mjs
+notes/evidence/
